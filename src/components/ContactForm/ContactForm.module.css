@@ -1,0 +1,27 @@
+.contactForm {
+  width: 300px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+  border: solid 2px;
+  background-color: lightyellow;
+}
+.contactFormInput {
+  padding: 10px;
+  border-radius: 6px;
+}
+.contactFormInput:focus,
+.contactFormInput:hover {
+  outline: solid 2px lightskyblue;
+}
+.contactFormButton {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.contactFormButton:focus,
+.contactFormButton:hover {
+  background-color: lightskyblue;
+}

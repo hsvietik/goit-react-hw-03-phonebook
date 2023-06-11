@@ -1,0 +1,11 @@
+.nameSearchForm {
+  margin-bottom: 20px;
+}
+.nameSearchInput {
+  padding: 10px;
+  border-radius: 6px;
+}
+.nameSearchInput:focus,
+.nameSearchInput:hover {
+  outline: solid 2px lightskyblue;
+}

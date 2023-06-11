@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
+import PropTypes from 'prop-types';
 import css from './ContactForm.module.css';
 
 const initialValues = { name: '', number: '' };
@@ -60,3 +61,4 @@ export class ContactForm extends Component {
     );
   }
 }
+ContactForm.propTypes = { addContact: PropTypes.func.isRequired };

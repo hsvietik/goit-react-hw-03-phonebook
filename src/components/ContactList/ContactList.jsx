@@ -1,6 +1,8 @@
+import PropTypes from 'prop-types';
 import css from './ContactList.module.css';
 import { FaTrash } from 'react-icons/fa';
-export const ContactList = ({ contacts, filter, deleteContact }) => {
+
+export const ContactList = ({ contacts, deleteContact }) => {
   return (
     <ul className={css.contactsList}>
       {contacts.map(({ id, name, number }) => {
@@ -21,4 +23,13 @@ export const ContactList = ({ contacts, filter, deleteContact }) => {
       })}
     </ul>
   );
+};
+ContactList.propTypes = {
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
+    })
+  ),
 };
